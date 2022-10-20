@@ -27,7 +27,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mt-4 d-flex justify-content-center flex-column">
       <Button
         onClick={() => {
           toogle();
@@ -38,7 +38,7 @@ const Home = () => {
       </Button>
       {isOpen && <AddTask />}
 
-      <TaskList />
+      <TaskList task={task} />
     </div>
   );
 };
