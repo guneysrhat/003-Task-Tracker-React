@@ -7,7 +7,7 @@ import axios from "axios";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [text, setText] = useState("Show Task Bar");
-  const [task, setTask] = useState();
+  const [task, setTask] = useState([]);
   const url = "https://63518223dfe45bbd55c21f98.mockapi.io/api/tasks";
   const toogle = (e) => {
     setIsOpen(!isOpen);
